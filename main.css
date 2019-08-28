@@ -61,6 +61,11 @@ h1 {
   background: rgba(105, 228, 166, 0.2);
   padding: 8px 12px;
   border-radius: 25px;
+  text-transform: capitalize;
+}
+
+.status__flag--error {
+  background: rgba(255, 101, 101, 0.2);
 }
 
 /*---STATUS BUTTON---*/
@@ -117,6 +122,17 @@ h1 {
 
 .footer a {
   font-size: 1.8rem;
+  margin-top: 10px;
+  border-bottom: 2px solid #3B86FF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer a:hover {
+  color: #1062E5;
+  border-bottom-color: #1062E5;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*---MEDIA QUERIES---*/

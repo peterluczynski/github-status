@@ -1,6 +1,7 @@
 /*---VARIABLES---*/
 $link-color: #3B86FF;
 $text-color: #43425D;
+$link-color-hover: #1062E5;
 $operations-background: #FAFAFA;
 
 /*---GLOBAL---*/
@@ -53,6 +54,11 @@ h1 {
     background: rgba(105,228,166, 0.2);
     padding: 8px 12px;
     border-radius: 25px;
+    text-transform: capitalize;
+
+    &--error {
+      background: rgba(255,101,101, 0.2); 
+    }
   }
 }
 
@@ -93,6 +99,14 @@ h1 {
   }
   a {
     font-size: 1.8rem;
+    margin-top: 10px;
+    border-bottom: 2px solid $link-color;
+    transition: all 0.5s;
+  }
+  a:hover {
+    color: $link-color-hover;
+    border-bottom-color: $link-color-hover;
+    transform: scale(1.1);
   }
 }
 
