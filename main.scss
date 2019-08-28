@@ -38,7 +38,7 @@ h1 {
 }
 .status {
   padding: 0 20px;
-  border-bottom: 1px solid #F1F1F3;
+  border-bottom: 2px solid #F1F1F3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,7 +81,7 @@ h1 {
 
 /*---FOOTER---*/
 .footer {
-  border-top: 3px solid #010101;
+  border-top: 5px solid $operations-background;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -93,5 +93,34 @@ h1 {
   }
   a {
     font-size: 1.8rem;
+  }
+}
+
+/*---MEDIA QUERIES---*/
+@media (min-width: 600px) {
+  :root {
+    font-size: 15px;
+  }
+  .statusButton {
+    width: 50vw;
+  }
+  .status {
+    padding: 0 10vw;
+  }
+  .footer {
+    padding: 5vh 25vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .statusContainer {
+    margin: 0 10vw;
+    box-shadow: 1px 1px  10px rgba(0, 0 ,0 , 0.17);
+  }
+  .status {
+    padding: 0 5vw;
+  }
+  .statusButton {
+    width: 30vw;
   }
 }
