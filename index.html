@@ -9,10 +9,48 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>GitHub Status</h1>
   </header>
 
+  <main>
+    <div class="statusContainer">
+      <div class="status">
+        <p class="status__name">Git Operations</p>
+        <p class="status__flag">Operational</p>
+      </div>
+      <div class="status">
+        <p class="status__name">API Requests</p>
+        <p class="status__flag">Operational</p>
+      </div>
+      <div class="status">
+        <p class="status__name">Issues, PRs, ....</p>
+        <p class="status__flag">Operational</p>
+      </div>
+      <div class="status">
+        <p class="status__name">Notifications</p>
+        <p class="status__flag">Operational</p>
+      </div>
+      <div class="status">
+        <p class="status__name">Gists</p>
+        <p class="status__flag">Operational</p>
+      </div>
+      <div class="status">
+        <p class="status__name">GitHub Pages</p>
+        <p class="status__flag">Operational</p>
+      </div>
+    </div>
+    <div class="buttonContainer">
+      <button type="button" class="statusButton">Get Status</button>
+    </div>
+    
+  </main>
+
+  <footer class="footer">
+    <h2>Made by Peter Luczynski</h2>
+    <a href="#">See the repo</a>
+    <a href="#">See my portfolio</a>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

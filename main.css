@@ -1,8 +1,7 @@
 /*---VARIABLES---*/
 /*---GLOBAL---*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+:root {
+  font-size: 10px;
 }
 
 body {
@@ -10,10 +9,113 @@ body {
   margin: 0 auto;
   color: #43425D;
   font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100%;
+  height: 100%;
 }
 
 a {
   color: #3B86FF;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/*---HEADER---*/
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 400;
+  color: #3B86FF;
+}
+
+/*---STATUS---*/
+.statusContainer {
+  background: #FAFAFA;
+}
+
+.status {
+  padding: 0 20px;
+  border-bottom: 1px solid #F1F1F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.status__name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.status__flag {
+  font-size: 1.3rem;
+  background: rgba(105, 228, 166, 0.2);
+  padding: 8px 12px;
+  border-radius: 25px;
+}
+
+/*---STATUS BUTTON---*/
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.statusButton {
+  font-size: 1.8rem;
+  color: #3B86FF;
+  border: 1px solid #3B86FF;
+  background: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 4px;
+  width: 70vw;
+  margin-top: 30px;
+  padding: 8px 12px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.statusButton:hover {
+  color: #fff;
+  background: #3B86FF;
+}
+
+/*---FOOTER---*/
+.footer {
+  border-top: 3px solid #010101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5vh 15vw;
+  margin-top: 5vh;
+  margin-bottom: 0;
+}
+
+.footer h2 {
+  font-size: 2rem;
+}
+
+.footer a {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */

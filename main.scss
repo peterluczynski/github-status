@@ -4,16 +4,94 @@ $text-color: #43425D;
 $operations-background: #FAFAFA;
 
 /*---GLOBAL---*/
-* {
-  box-sizing: border-box;
+:root {
+  font-size: 10px;
 }
 body {
   padding: 0;
   margin: 0 auto;
   color: $text-color;
   font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100%;
+  height: 100%;
 }
 a {
   color: $link-color;
   text-decoration: none;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+/*---HEADER---*/
+.header {
+  text-align: center;
+  h1 {
+    font-weight: 400;
+    color: $link-color;
+  }
+}
+
+/*---STATUS---*/
+.statusContainer {
+  background: $operations-background;
+}
+.status {
+  padding: 0 20px;
+  border-bottom: 1px solid #F1F1F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__flag {
+    font-size: 1.3rem;
+    background: rgba(105,228,166, 0.2);
+    padding: 8px 12px;
+    border-radius: 25px;
+  }
+}
+
+/*---STATUS BUTTON---*/
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+.statusButton {
+  font-size: 1.8rem;
+  color: $link-color;
+  border: 1px solid $link-color;
+  background: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 4px;
+  width: 70vw;
+  margin-top: 30px;
+  padding: 8px 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.statusButton:hover {
+  color: #fff;
+  background: $link-color;
+}
+
+/*---FOOTER---*/
+.footer {
+  border-top: 3px solid #010101;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5vh 15vw;
+  margin-top: 5vh;
+  margin-bottom: 0;
+  h2 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1.8rem;
+  }
 }
