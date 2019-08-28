@@ -1,0 +1,19 @@
+/*---VARIABLES---*/
+/*---GLOBAL---*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  color: #43425D;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  color: #3B86FF;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

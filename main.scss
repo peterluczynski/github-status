@@ -1,0 +1,19 @@
+/*---VARIABLES---*/
+$link-color: #3B86FF;
+$text-color: #43425D;
+$operations-background: #FAFAFA;
+
+/*---GLOBAL---*/
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+  color: $text-color;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
+}
